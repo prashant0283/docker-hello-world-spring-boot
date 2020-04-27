@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: mukeshupretidockerhelloworldspringboot 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: mukeshupretidockerhelloworldspringboot 
+    spec:
+      containers:
+        - name: mukeshupretidockerhelloworldspringboot 
+          image: mukicontainerregistry.azurecr.io/mukeshupretidockerhelloworldspringboot
+          ports:
+          - containerPort: 8080
